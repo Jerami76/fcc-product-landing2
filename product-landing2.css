@@ -1,0 +1,14 @@
+:root {
+  font-family: "Baumans", Arial, sans-serif;
+  color: white;
+}
+
+body {
+  background-color: black;
+}
+
+video {
+  max-width: 100vw;
+  min-width: 300px;
+  height: auto;
+}
