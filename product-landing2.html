@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html class="ie" lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-type" />
+
+    <link rel="stylesheet" type="text/css" href="product-landing.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Baumans"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+
+    <title>Product Landing Page</title>
+  </head>
+
+  <body>
+    <header id="header">
+      <img
+        id="header-img"
+        src="http://getdrawings.com/images/drums-drawing-17.png"
+        alt="drum-logo"
+      />
+      <nav id="nav-bar">
+        <ul id="internal-links">
+          <li class="nav-link" href="#overview">Overview</li>
+          <li class="nav-link" href="#products">Products</li>
+          <li class="nav-link" href="#video">Videos</li>
+          <li class="nav-link" href="#shipping">shipping</li>
+          <li class="nav-link" href="#mailing-list">Discounts!</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="product-page">
+      <!--In the main page, I want a top container, with Company name, contact information(address, phone). Then I'll need a container for each section in internal-links-->
+      <div id="banner" class="container">
+        <div id="store-name" class="container"></div>
+        <div id="contact-info" class="container"></div>
+      </div>
+      <div id="overview" class="container"></div>
+      <div id="products" class="container">
+        <div id="productbox1" class="container"></div>
+        <div id="productbox2" class="container"></div>
+        <div id="productbox3" class="container"></div>
+      </div>
+      <div id="videos" class="container">
+        <video
+          id="video"
+          src="https://app.coverr.co/s3/mp4/Drums.mp4"
+          width=""
+          height=""
+          controls
+        ></video>
+      </div>
+      <div id="mailing-list" class="container">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label for="email">Join our Mailing Lists for HUGE Discounts!</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="ValidEmailAddress@email.com"
+          />
+          <input typgite="submit" id="submit" />
+        </form>
+      </div>
+      <div id="shipping" class="container"></div>
+    </main>
+  </body>
+</html>
