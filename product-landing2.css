@@ -22,6 +22,7 @@ video {
 .logo {
   width: 140px;
   height: 140px;
+  border: 5px solid white;
   border-radius: 50%;
   
 }
@@ -37,9 +38,9 @@ header{
 ul{
  display:flex;
  flex-wrap:wrap;
- justify-content:space-between;
- align-items:space-around;
+ justify-content:space-evenly;
  margin:0;
+ padding: 10px;
 
 }
 
@@ -51,7 +52,7 @@ main{
 ul > li{
   font-size: 3em;
   list-style-type: none;
-  border: 2px solid slateblue;
+  border: 4px solid slateblue;
   padding: .2em;
   margin:0;
   
