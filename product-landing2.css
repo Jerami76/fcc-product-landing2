@@ -385,10 +385,16 @@ div.product-box>p{
   font-weight: lighter;
   text-align: justify;
 }
+
 video {
   max-width: 100%;
   min-width: 300px;
   height: auto;
+  
+}
+
+#videos{
+  padding:0 10%;
 }
 
 header {
@@ -396,6 +402,7 @@ header {
   padding: 1em 0 0;
 }
 nav {
+  
   position: sticky;
   top: 0;
   margin-top: 10px;
@@ -411,8 +418,9 @@ ul {
 }
 
 main {
-  grid-row: auto;
+  grid-row: 3/4;
   background-color: gray;
+  height:auto;
 }
 
 ul > li {
@@ -425,6 +433,9 @@ ul > li {
   flex: 0 1 20%;
   text-align: center;
 }
+
+
+
 
 /* unvisited link */
 a:link {
@@ -470,6 +481,10 @@ header > div {
   justify-content: space-around;
   align-items: center;
 }
+form{
+font-size: 1.5em;
+margin:2em 10%;
+}
 
 div > img.logo {
   width: 140px;
@@ -479,18 +494,18 @@ div > img.logo {
   justify-self: center;
 }
 
-div.flex-container {
-  box-sizing:content-box;
+.flex-container {
+  
   display: flex;
-  flex: none;
-  height:auto;
+  
+  height: 180.75rem ;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
-div.flex-container > div {
- 
+.product-box {
+  box-sizing: content-box;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -498,6 +513,7 @@ div.flex-container > div {
   width: 80%;
   border: 2px solid white;
   padding: 1.5em;
+  flex-shrink: 1;
   
 
 }
@@ -514,8 +530,9 @@ div #details {
   padding: 1em 0 0 6em;
 }
 
-#details > p {
-  
+
+img{
+  width: 48rem;
 }
 
 /* Next CSS copied from previous project. Check and clean.*/
