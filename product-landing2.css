@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -174,7 +174,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -184,7 +185,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -350,135 +352,165 @@ template {
 
 html {
   box-sizing: border-box;
-  -webkit-box-sizing: border-box; 
-  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
 :root {
   font-family: "Baumans", Arial, sans-serif;
   color: white;
-  
 }
 
 body {
   background-color: black;
   display: grid;
   max-width: 100vw;
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 2rem;
+  margin: 0.2em;
   
-
 }
 
-p{
-  font-size: 2em;
-  margin: .2em;
-}
 
+div.product-box>p{
+  font-weight: lighter;
+  text-align: justify;
+}
 video {
   max-width: 100%;
   min-width: 300px;
   height: auto;
-  
 }
 
-
-
-header{
+header {
   grid-row: 2/3;
   padding: 1em 0 0;
-  
-  
 }
-nav{
+nav {
   position: sticky;
   top: 0;
-  margin-top:10px;
+  margin-top: 10px;
 }
 
-ul{
- display:flex;
- flex-wrap:nowrap;
- justify-content:space-around;
- align-items: flex-start;
- Margin: 0;
- padding: 0;
-
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin: 0;
+  padding: 0;
 }
 
-main{
+main {
   grid-row: 3/7;
   background-color: gray;
-  
 }
 
-ul > li{
+ul > li {
   font-size: 2.8em;
   list-style-type: none;
   border: 4px solid slateblue;
   background-color: black;
-  padding: .2em;
-  margin:0;
+  padding: 0.2em;
+  margin: 0;
   flex: 0 1 20%;
-  text-align:center;
-  }
+  text-align: center;
+}
 
-  h1 {
-    font-size: 5em;
-    text-align: center;
-    margin: .25em 0 .1em;
-    
-  }
+/* unvisited link */
+a:link {
+  color: darkorchid;
+  text-decoration: none;
+}
 
-  h2{
-    font-size: 3em;
-    margin:0;
-    padding:0;
-  }
+/* visited link */
+a:visited {
+  color: rgba(142, 4, 184, 0.746);
+}
 
-  h3{
-    font-size:2.5em;
-    margin:0;
-    font-weight: bold;
-  }
+/* mouse over link */
+a:hover {
+  color: rgb(0, 232, 240);
+}
 
-  header>div{
-    
-    display:flex;
-    justify-content:space-around;
-    align-items: center;
+/* selected link */
+a:active {
+  color: rgba(124, 21, 221, 0.822);
+}
 
-  }
+h1 {
+  font-size: 5em;
+  text-align: center;
+  margin: 0.25em 0 0.1em;
+}
 
-  div>img.logo {
-    width: 140px;
-    height: 140px;
-    border: 5px solid white;
-    border-radius: 50%;
-    justify-self: center;
-    
-    
-  }
-  .center {
-    text-align: center;
-  }
+h2 {
+  font-size: 3em;
+  margin: 0;
+  padding: 0;
+}
 
-  #overview{
-    text-align: justify;
-    margin:0 4em 0 6em;
-  }
+h3 {
+  font-size: 2.5em;
+  margin: 0;
+  font-weight: bold;
+}
 
-  #details{
-    padding:1em 0 0 6em;
-  }
+header > div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
 
-  #details>p{
-    font-size:1.5em;
-  }
+div > img.logo {
+  width: 140px;
+  height: 140px;
+  border: 5px solid white;
+  border-radius: 50%;
+  justify-self: center;
+}
 
-  /* Next CSS copied from previous project. Check and clean.*/
+div.flex-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
 
+div.flex-container > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 80%;
+  border: 2px solid white;
+  padding: 1.5em;
+
+}
+.center {
+  text-align: center;
+}
+
+#overview {
+  text-align: justify;
+  margin: 0 4em 5em 6em;
+}
+
+div #details {
+  padding: 1em 0 0 6em;
+}
+
+#details > p {
   
+}
+
+/* Next CSS copied from previous project. Check and clean.*/
