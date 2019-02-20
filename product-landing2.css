@@ -411,7 +411,7 @@ ul {
 }
 
 main {
-  grid-row: 3/7;
+  grid-row: auto;
   background-color: gray;
 }
 
@@ -480,13 +480,17 @@ div > img.logo {
 }
 
 div.flex-container {
+  box-sizing:content-box;
   display: flex;
+  flex: none;
+  height:auto;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 }
 
 div.flex-container > div {
+ 
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -494,6 +498,7 @@ div.flex-container > div {
   width: 80%;
   border: 2px solid white;
   padding: 1.5em;
+  
 
 }
 .center {
