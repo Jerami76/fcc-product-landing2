@@ -24,46 +24,128 @@
   </head>
 
   <body>
+    <nav id="nav-bar">
+      <ul id="internal-links">
+        <li class="nav-link"><a href="#overview">Overview</a></li>
+        <li class="nav-link"><a href="#products">Products</a></li>
+        <li class="nav-link"><a href="#videos">Videos</a></li>
+        <li class="nav-link"><a href="#mailing-list">Discounts</a></li>
+      </ul>
+    </nav>
     <header id="header">
-      <img
-        id="header-img"
-        src="http://getdrawings.com/images/drums-drawing-17.png"
-        alt="drum-logo"
-      />
-      <nav id="nav-bar">
-        <ul id="internal-links">
-          <li class="nav-link" href="#overview">Overview</li>
-          <li class="nav-link" href="#products">Products</li>
-          <li class="nav-link" href="#video">Videos</li>
-          <li class="nav-link" href="#shipping">Shipping</li>
-          <li class="nav-link" href="#mailing-list">Discounts!</li>
-        </ul>
-      </nav>
+      <div class="">
+        <h1>Mainely</h1>
+        <img
+          id="header-img"
+          class="logo"
+          src="http://getdrawings.com/images/drums-drawing-17.png"
+          alt="Drummer logo"
+        />
+        <h1>Drums</h1>
+      </div>
+      <div>
+        <h2><i class="fas fa-drum"></i> "We make drums for people!"</h2>
+      </div>
     </header>
 
-    <main id="product-page">
+    <main id="product-page" class="drum-set-background">
       <!--In the main page, I want a top container, with Company name, contact information(address, phone). Then I'll need a container for each section in internal-links-->
-      <div id="banner" class="container">
-        <div id="store-name" class="container"></div>
-        <div id="contact-info" class="container"></div>
+      <div class="center">
+        <p>See them in <a href="#drum-vid" id="vid-link">action</a> !</p>
       </div>
-      <div id="overview" class="container"></div>
-      <div id="products" class="container">
-        <div id="productbox1" class="container"></div>
-        <div id="productbox2" class="container"></div>
-        <div id="productbox3" class="container"></div>
+
+      <div id="overview" class="container2">
+        <p>
+          <strong>All of our drums are</strong> lorem ipsum dolor sit amet,
+          consectetur adipiscing elit. Suspendisse nec ante id dolor molestie
+          bibendum. Aenean ac risus quis libero cursus ullamcorper at a metus.
+          Cras nibh lorem, ullamcorper at neque eget, pretium interdum magna.
+        </p>
+
+        <div id="details">
+          <h3><i class="fas fa-music"></i> Our Drums can make music!</h3>
+          <p>
+            These drums are great for making music. Lorem ipsum dolor sit amet,
+            consectetur adipiscing elit. Vivamus ut viverra velit.
+          </p>
+
+          <h3><i class="fas fa-users"></i> Play alone or with friends!</h3>
+          <p>
+            These drums are perfect for playing alone or with a full band. Lorem
+            ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ut
+            viverra velit.
+          </p>
+
+          <h3><i class="fas fa-recycle"></i> 100% Sustainable!</h3>
+          <p>
+            Our drums are made from wood. This stuff literally grows on trees.
+            Vivamus ut viverra velit.
+          </p>
+        </div>
       </div>
-      <div id="videos" class="container">
-        <video
-          id="video"
-          src="https://app.coverr.co/s3/mp4/Drums.mp4"
-          width=""
-          height=""
-          controls
-        ></video>
+
+      <div id="products" class="flex-container">
+        <div id="productbox1" class="product-box">
+          <h2 id="product-name1">Our Best Ever!</h2>
+          <p id="price1">$999</p>
+          <img
+            src="http://static1.squarespace.com/static/559b3d1fe4b0167e53053fa2/55d63b99e4b043d0c3b6db7a/55d63c1fe4b043d0c3b6fbb2/1457243454390/?format=1000w"
+            alt="Copper drum photo"
+          />
+
+          <p id="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            justo risus, mattis in mollis et, venenatis eget odio. Curabitur
+            aliquam lorem in nibh commodo viverra. Quisque vehicula est in augue
+            mollis vulputate pulvinar id enim.
+          </p>
+        </div>
+
+        <div id="productbox2" class="product-box">
+          <h2 id="product-name2">Student Grade</h2>
+          <p id="price2">$699</p>
+          <img
+            src="https://www.pearldrummersforum.com/attachment.php?attachmentid=438891&stc=1&d=1353734849"
+            alt="Green drum photo"
+          />
+
+          <p id="description2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            justo risus, mattis in mollis et, venenatis eget odio. Curabitur
+            aliquam lorem in nibh commodo viverra. Quisque vehicula est in augue
+            mollis vulputate pulvinar id enim.
+          </p>
+        </div>
+
+        <div id="productbox3" class="product-box">
+          <h2 id="product-name3">The Hobbyist</h2>
+          <p id="price3">$99</p>
+          <img
+            src="https://www.pearldrummersforum.com/attachment.php?attachmentid=401537&stc=1&d=1299255151"
+            alt="Ugly drum photo"
+          />
+
+          <p id="description3">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            justo risus, mattis in mollis et, venenatis eget odio. Curabitur
+            aliquam lorem in nibh commodo viverra. Quisque vehicula est in augue
+            mollis vulputate pulvinar id enim.
+          </p>
+        </div>
       </div>
+      <div id="videos">
+        <h3>Check out our videos!</h3>
+        <video id="video" src="https://app.coverr.co/s3/mp4/Drums.mp4" controls>
+          A man playing a Drum
+        </video>
+
+        <p>Our drums can be played anywhere. Watch this expert demo!</p>
+      </div>
+      <hr>
       <div id="mailing-list" class="container">
         <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <p>Want to save even more money? Receive Weekly promotions straight to your inbox!</p>
+          <br>
           <label for="email">Join our Mailing Lists for HUGE Discounts!</label>
           <input
             type="email"
@@ -74,7 +156,6 @@
           <input type="submit" id="submit" />
         </form>
       </div>
-      <div id="shipping" class="container"></div>
     </main>
   </body>
 </html>
