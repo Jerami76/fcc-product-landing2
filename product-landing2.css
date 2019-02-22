@@ -399,7 +399,7 @@ video {
 
 header {
   grid-row: 2/3;
-  padding: 1em 0 0;
+  padding: 1em 0 1em;
 }
 nav {
   
@@ -476,11 +476,11 @@ h3 {
   font-weight: bold;
 }
 
-main.drum-set-background {
+/*main.drum-set-background {
     background-image: url(http://www.supercoloring.com/sites/default/files/silhouettes/2015/05/drum-kit-purple-silhouette.svg);
     background-repeat: no-repeat;
     background-position: top;
-  }
+  }*/
 
 
 header > div {
@@ -530,16 +530,18 @@ div > img.logo {
 
 #overview {
   text-align: justify;
-  margin: 0 4em 5em 6em;
+  margin: 0 6em 1em 6em;
 }
 
 div #details {
   padding: 1em 0 0 6em;
 }
 
+div.center{
+  padding:.8em;
+}
 
 img{
   width: 48rem;
 }
 
-/* Next CSS copied from previous project. Check and clean.*/
