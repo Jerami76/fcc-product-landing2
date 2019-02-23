@@ -504,7 +504,7 @@ div > img.logo {
 .flex-container {
   
   display: flex;
-  
+
   height: 180.75rem ;
   flex-direction: column;
   justify-content: space-around;
@@ -517,7 +517,8 @@ div > img.logo {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
+  width: 48em;
+  max-width: min-content;
   border: 2px solid white;
   padding: 1.5em;
   flex-shrink: 1;
@@ -543,5 +544,33 @@ div.center{
 
 img{
   width: 48rem;
+  height: 100%;
 }
 
+/*media query for screens larger than 600px(maybe landscape[w/device status{?}])*/
+
+/*@media (min-width: 1000px) {
+  div#products.flex-container {
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: stretch;
+      height: auto;
+      width: 98vw;
+  }
+
+
+.product-box {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 48em;
+  max-width: 30vw;
+  overflow: hidden;
+  border: 2px solid white;
+  padding: 1.5em;
+  flex-shrink: 1;
+  
+
+}}*/
