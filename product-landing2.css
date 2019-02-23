@@ -547,9 +547,9 @@ img{
   height: 100%;
 }
 
-/*media query for screens larger than 600px(maybe landscape[w/device status{?}])*/
+/*media query for screens larger than 100px(maybe landscape[w/device status{?}])*/
 
-/*@media (min-width: 1000px) {
+@media (min-width: 1000px) {
   div#products.flex-container {
       flex-direction: row;
       justify-content: space-evenly;
@@ -571,6 +571,26 @@ img{
   border: 2px solid white;
   padding: 1.5em;
   flex-shrink: 1;
-  
+  }
 
-}}*/
+  p{
+    font-size: 1em;
+  }
+
+  img{
+    box-sizing: content-box;
+    width: 20em;
+    height:15.68em;
+    }
+
+    .nav-link:hover {
+      box-shadow: 0 0 10px 5px slateblue;
+    }
+}
+
+/*disable box-shadow on not(hover) devices*/
+@media (not:any-hover){
+  .nav-link{
+      box-shadow: 0 0 10px 5px slateblue;
+    }
+  }
