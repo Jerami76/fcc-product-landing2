@@ -375,7 +375,7 @@ body {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 2em;
   margin: 0.2em;
   
 }
@@ -476,11 +476,6 @@ h3 {
   font-weight: bold;
 }
 
-/*main.drum-set-background {
-    background-image: url(http://www.supercoloring.com/sites/default/files/silhouettes/2015/05/drum-kit-purple-silhouette.svg);
-    background-repeat: no-repeat;
-    background-position: top;
-  }*/
 
 
 header > div {
@@ -502,9 +497,8 @@ div > img.logo {
 }
 
 .flex-container {
-  
-  display: flex;
 
+  display: flex;
   height: 180.75rem ;
   flex-direction: column;
   justify-content: space-around;
@@ -574,7 +568,11 @@ img{
   }
 
   p{
-    font-size: 1em;
+    font-size: 1.5em;
+  }
+
+  .product-box>p{
+  font-size: 1em;
   }
 
   img{
@@ -582,15 +580,24 @@ img{
     width: 20em;
     height:15.68em;
     }
-
+/*add box shadow on desktop*/
     .nav-link:hover {
       box-shadow: 0 0 10px 5px slateblue;
     }
 }
 
-/*disable box-shadow on not(hover) devices*/
-@media (not:any-hover){
-  .nav-link{
-      box-shadow: 0 0 10px 5px slateblue;
-    }
+
+@media screen and (min-width: 1600px) {
+  p{
+    font-size: 2.1em;
   }
+
+  .product-box>p{
+    font-size: 1.5em;
+  }
+  img{
+    width: 30em;
+    
+    height:23em;
+    }
+}
