@@ -581,7 +581,7 @@ img{
     height:15.68em;
     }
 /*add box shadow on desktop*/
-    .nav-link:hover {
+    ul>li:hover {
       box-shadow: 0 0 10px 5px slateblue;
     }
 }
